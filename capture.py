@@ -4,7 +4,7 @@ import cv2
 from tkinter import *
 import tkinter.messagebox
 import time
-import os
+import os 
 
 
 root=Tk()
@@ -22,7 +22,7 @@ background_label.pack(side=TOP)
 
 def hel():
    help(cv2)
-
+ 
 def Contri():
    tkinter.messagebox.showinfo("Contributor","\nDigvijay Patil \n")
 
@@ -66,7 +66,7 @@ def detect():
          cv2.imshow('Cam Start',frame1)
          if cv2.waitKey(10) == ord('q'):
             destroy()
-            break
+            break 
             
          def save_img():
             folder_path = "Images"
@@ -91,4 +91,3 @@ but2=Button(frame,padx=2,pady=2,width=5,bg='white',fg='black',relief=GROOVE,text
 but2.place(x=800,y=450)
 
 root.mainloop()
-
